@@ -1,0 +1,48 @@
+How did viewing a diff between two versions of a file help you see the bug that was introduced?
+
+Answer: Using the unix diff tool I was able to quickly look for the minus and plus signs of each of the lines that were removed from the old file and added to the new files. Based on this I was able to pinpoint where I could have made a mistake instead of manually looking through a big file line by line trying to find a line that was different. This tool definitely helped tremendously in order for me to spot bugs.
+
+
+
+
+
+How could having easy access to the entire history of a file make you more efficient programmer in the long term?
+
+Answer: Having access to the history of a file and the changes that have been made by either myself or someone else could be a huge help. This would help us pinpoint where the changes were made and try to quickly resolve any issues you might have encountered. Also, maybe you were out of town and coming back your file for code might have been changed completely from other developers on your team. By seeing the history it would be great to see what steps were made to get to where the file is today.
+
+
+
+
+
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google Docs does?
+
+Answer: I think some of the pros would be that you can logically save your content based off a commit to smaller chunks so that when you look at history of a particular file it will be easy to understand what change was made in that commit. A con would be for people who make commits for every small change or don't commit until a long period of time goes by. This would either clutter the history of the file or the changes in each version would be so drastic a diff tool wouldn't be any help.
+
+
+
+
+
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file seperately?
+
+Answer: By saving files multiple files per single commit keeps your code files as a package together. If you ever need to revert back to because of an issue you can directly just revert back to a commit rather than trying to find out which files you had to revert back.
+
+
+
+
+How can you use the commands git log and git diff to view the history of files?
+
+Answer: Hypothetically if I made a commit and came back a week later to work my team would have made some changes to the code base. A good way to understand some of the changes that were made would be for me to go through this history. By using git log I can see all the commits made since my last commit. I could then pick and choose which commits I would like to compare with the last commit I made. This way I can quickly grasp what the changes were.
+
+
+
+
+
+How might using version control make you more confident to make changes that could break something?
+
+Answer: The ability for me to track the changes I made by viewing the history and using the git diff tool to see the differences in the commits could help me easily spot a bug. By doing so I would know exactly where the bug was introduced and try to quickly remediate the issue instead of trying to go through tons of files to find it.
+
+
+
+Now that you have your workspace up, what do you want to try using Git for?
+
+Answer: All my programming practice and future projects!
