@@ -1,0 +1,41 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+Answer: Wen you first initialize a repository it takes your directory you are trying to initialize and starts tracking every single file and folder that has any changes to it, including adding, modifying or deleting contents, files or folders themselves. You need to do it because otherwise you wouldn't get the benefits of using version control. Your system will always only keep the latest version of the file or folder and cannot keep a history of it. In order to use the benefits of version control using Git you would have to initialize it.
+
+
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+Answer: The staging area actually could be a huge benefit in version control, because you can modify your commits to what exactly you want for it to go in and having that be saved as a snapshot. Unlike SVN you just make a commit directly to all the chanages you have made. This makes it very flexible to create commits based on bug fixes, functionality or whatever you think makes sense for your team or organization.
+
+
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+Answer: From the previous answer I mentioned how staging area can be used as a way to only add files to a commit that make sense for a logical change whether it might be for a bug fix, feature change or many other categories. You can do the same here, but using some of the new tools you learned such as git diff, git diff --staged you get to learn a lot more about what differences are between the working directory and the staging area along with the staging area and the most recent commit. Having this insight before committing will be a huge help to make sure you only commit based on logical changes as long as you follow the same flow of work that was taught. If you become to lazy to use these tools, you won't know exactly what changes you will be committing eventually will be hard for you to figure out things when looking back at the history.
+
+
+
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+Answer: With branches like the instructor stated if you have something you want to try out using branches can help by not making the master branch state full of commits from things that might or might not work. By making sure you only have commits on the master branch that help make the codebase fresh then your history will be organized and be helpful as well. Branches help by creating a copy of the master branch so that it can be your own playground to do whatever it is you like.
+
+
+
+How do the diagrams help you visualize the branch structure?
+
+Answer: The diagrams really help me visualize how the entire structure of my repo is laid out and how each commit is traked in what branch. Also, it helped me understand some of the messages that never made sense to me.
+
+
+
+What is the result of merging two branches togetehr? Why do we represent it in the diagram the way we do?
+
+Answer: The result of merging the coins branch into the master branch is so that we can include commits made from the coins branch to any new commits made to the master branch from the point in time when the branch was made. The reason we represent it in the diagram is because we make a new commit and tag it with the master branch with. This new commit now will have all masters previous snapshot and the coins branch will be merged in with it. We want to have every commit be associated with a parent and if we didn't do it this way, we would run into the problem of having commits lost because they wouldn't have a parent commit or branch.
+
+
+
+
+What are the pros and cons of Git's automatic merging vs always doing merges manually?
+
+Answer: With automatic merging you are relying on Git to know what to do while manual merging in my opionin is better where you can make sure the merging you are doing is correct and making sure there are no conflicts and if there are we can work as a team to resolve them quickly and accurately.
